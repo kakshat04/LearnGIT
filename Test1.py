@@ -14,7 +14,7 @@ z = Test1(10)
 print(z)
 
 
-names = ["AB",
+names = ["A",
          "B",
          "C",]
 print(names)
