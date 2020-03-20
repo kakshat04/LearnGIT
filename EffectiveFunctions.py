@@ -52,6 +52,8 @@ def test(function, a,b):
     mul = a*b
     sum = function(a,b)
     return mul, sum
+
+
 print(test(sum, 10, 20))
 
 
