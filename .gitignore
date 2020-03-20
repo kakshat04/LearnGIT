@@ -1,0 +1,6 @@
+venv/Scripts/Activate.ps1
+venv/Scripts/activate.bat
+venv/Scripts/deactivate.bat
+venv/Scripts/python.exe
+venv/Scripts/pythonw.exe
+venv/pyvenv.cfg
