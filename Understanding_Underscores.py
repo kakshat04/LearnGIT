@@ -32,7 +32,7 @@ if __name__ == "__main__":
     obj1 = A()
     obj2 = B()
     print(dir(obj2))
-    # print(obj2.a)
+    # pri nt(obj2.a)
     print(obj2._b)
     print(obj2._B__c)
     print(obj2._A__c)
