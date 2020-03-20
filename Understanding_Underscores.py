@@ -31,7 +31,6 @@ class B(A):
 if __name__ == "__main__":
     obj1 = A()
     obj2 = B()
-
     print(dir(obj2))
     # print(obj2.a)
     print(obj2._b)
