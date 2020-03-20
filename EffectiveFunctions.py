@@ -48,9 +48,9 @@ print(greet(bark))
 def sum(a, b):
     return a + b
 
-def test(func, a,b):
+def test(function, a,b):
     mul = a*b
-    sum = func(a,b)
+    sum = function(a,b)
     return mul, sum
 
 
