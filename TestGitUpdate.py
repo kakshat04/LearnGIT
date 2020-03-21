@@ -68,8 +68,6 @@ z = (lambda x, y: x + y)(10,20)
 print(z)
 # print(add1(10, 20))
 
-<<<<<<< HEAD
-=======
 
 "In Python 2, map, reduce and filter returned List itself, whereas in Python 3, it returns an object."
 import functools
@@ -81,4 +79,3 @@ print(mod)
 mul = tuple(map(lambda x: x**2, test_list))
 print(mul)
 
->>>>>>> LearnGit
