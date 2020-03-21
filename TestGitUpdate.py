@@ -50,3 +50,17 @@ def test_nested_number(inp):
 print(test_nested("kumar akshat"))
 z = test_nested_number("Div")
 print(z(5))
+
+
+"""
+Lambda
+"""
+
+
+def add(a, b):
+    return a + b
+
+
+z = (lambda x, y: x + y)(10,20)
+print(z)
+# print(add1(10, 20))
