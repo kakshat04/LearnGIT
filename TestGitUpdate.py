@@ -16,4 +16,4 @@ def make_changes(func, text1):
 
 
 print(capital("abc"))
-print(makeChanges(capital, "Bxx"))
+print(make_changes(capital, "Bxx"))
