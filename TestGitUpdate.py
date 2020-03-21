@@ -64,3 +64,15 @@ def add(a, b):
 z = (lambda x, y: x + y)(10,20)
 print(z)
 # print(add1(10, 20))
+
+
+"In Python 2, map, reduce and filter returned List itself, whereas in Python 3, it returns an object."
+import functools
+test_list = [10, 50, 51, 0, 51, 210, 4, 21, 54, 50]
+add = functools.reduce(lambda x, y: x + y, test_list)
+print(add)
+mod = list(filter(lambda x: x % 2 == 0, test_list))
+print(mod)
+mul = tuple(map(lambda x: x**2, test_list))
+print(mul)
+
