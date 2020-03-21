@@ -16,9 +16,9 @@ def make_changes(func, text1):
 
 
 print(capital("abc"))
-<<<<<<< HEAD
+
 print(make_changes(capital, "Bxx"))
-=======
+
 print(make_changes(capital, "Bxx"))
 
 
@@ -67,4 +67,4 @@ def add(a, b):
 z = (lambda x, y: x + y)(10,20)
 print(z)
 # print(add1(10, 20))
->>>>>>> LearnGit
+
