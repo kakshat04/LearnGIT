@@ -155,3 +155,15 @@ call_test()
 print(test1("akshat"))
 print(test2("paru"))
 print(test3("chotu"))
+
+
+# Deep and Shallow copy
+xs = [[1,2,3], [4,5,6]]
+ys = list(xs)
+
+print(xs)
+print(ys)
+xs.append(["SDAS"])
+xs[1][0] = 'xx'
+print(xs)
+print(ys)
