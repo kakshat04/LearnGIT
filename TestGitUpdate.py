@@ -79,3 +79,79 @@ print(mod)
 mul = tuple(map(lambda x: x**2, test_list))
 print(mul)
 
+
+"Difference between == and is"
+a = [1, 2, 3]
+b = a
+
+print(a)
+print(b)
+print(b == a)  # This checks for equality
+print(b is a)  # This checks for identity ==> Object pointer
+# Both will return True as both content of list and object pointer is same.
+
+c = list(a)
+print(c)
+print(a == c)  # This will return True, as it checks for equality
+print(b == c)  # This will return True, as it also checks for equality
+print(b is c)  # This will return False, as c will point to different object.
+print(a is c)  # This will return False, as c will point to different object.
+
+
+# Keyword arguments
+def test_arguments(aa, dd=0, *bb, **cc):
+    print(aa, dd, bb, cc)
+
+
+test_arguments(10, 20, 30, a=1, b=2)
+
+
+# Decorators
+def base_function(func):
+    def wrapper():
+        return "ABC" + func() + "ABC"
+    return wrapper
+
+
+def sec_base_func(func):
+    def wrap():
+        return "abc" + func() + "abc"
+    return wrap
+
+
+@sec_base_func
+@base_function
+def test():
+    return "Hello World"
+
+
+def dec_call_test(func):
+    def wrap(text):
+        return func(text).upper()
+    return wrap
+
+@dec_call_test
+def test1(text):
+    return text
+
+
+@dec_call_test
+def test2(text1):
+    return text1
+
+
+# @dec_call_test
+def test3(text2):
+    return text2
+
+
+def call_test():
+    print(test1("akshat").upper())
+    print(test2("paru").upper())
+    print(test3("moti").upper())
+
+
+call_test()
+print(test1("akshat"))
+print(test2("paru"))
+print(test3("chotu"))
