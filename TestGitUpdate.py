@@ -167,3 +167,29 @@ xs.append(["SDAS"])
 xs[1][0] = 'xx'
 print(xs)
 print(ys)
+
+l1 = [123,23,51,451,415,1234,15124,1]
+for i in range(0, len(l1)):
+    for j in range(0, len(l1) - 1):
+        if l1[j] > l1[j+1]:
+            l1[j],  l1[j+1] = l1[j+1], l1[j]
+print(l1)
+
+
+l = []
+for i in "get":
+    for j in "set":
+        if i is not 't' and j is not 'e':
+            l.append(i+j)
+print(l)
+
+z = [x+y for x in 'get' for y in 'set' if x is not 't' and y is not 'e']
+print(z)
+
+
+# print odd months using list comprehension
+months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+z = [months[x] for x in range(0, len(months), 2)]
+z1 = [j for i, j in enumerate(months) if i%2 == 0]
+print(z)
+print(z1)
