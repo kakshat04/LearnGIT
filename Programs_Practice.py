@@ -126,3 +126,69 @@ class Human:
 obj1 = Human("Doctor")
 obj1.get_profession()
 print(obj1.profession)
+
+
+
+names2[0] = 'Alice'
+names3[1] = 'Bob'
+
+sum = 0
+for ls in (names1, names2, names3):
+    print(ls)
+    if ls[0] == 'Alice':
+        sum += 1
+    if ls[1] == 'Bob':
+        sum += 10
+print(sum)
+
+
+def extendList(val, list=[]):
+    list.append(val)
+    return list
+
+
+list1 = extendList(10)
+# list2 = extendList(123,[])
+list3 = extendList('a')
+
+print("list1 = %s" % list1)
+# print("list2 = %s" % list2)
+# print("list3 = %s" % list3)
+
+
+a = [1, 2, 3, 4, 5, 6, 7]
+l1 = []
+for i in a:
+    if i == 2 or i == 4:
+        continue
+    l1.append(i)
+print(l1)
+
+
+class Human:
+    profession = "Engineer"
+
+    def __init__(self, profession):
+        self.profession = profession
+
+    def get_profession(self):
+        print(Human.profession)
+        print(self.profession)
+
+
+obj1 = Human("Doctor")
+obj1.get_profession()
+print(obj1.profession)
+
+
+#  Palindrome of a Number
+n = 151
+temp = n
+rev = 0
+while n > 0:
+    dig = n % 10
+    rev = rev * 10 + dig
+    n = n//10
+print(n)
+print(rev)
+# if
