@@ -75,7 +75,6 @@ print(check_prime(2))
 names1 = ['Amir', 'Bear', 'Charlton', 'Daman']
 names2 = names1
 names3 = names1[:]
-<<<<<<< HEAD
 
 names2[0] = 'Alice'
 names3[1] = 'Bob'
@@ -130,10 +129,6 @@ print(obj1.profession)
 
 
 
-
-=======
->>>>>>> LearnGit
-
 names2[0] = 'Alice'
 names3[1] = 'Bob'
 
@@ -184,3 +179,16 @@ class Human:
 obj1 = Human("Doctor")
 obj1.get_profession()
 print(obj1.profession)
+
+
+#  Palindrome of a Number
+n = 151
+temp = n
+rev = 0
+while n > 0:
+    dig = n % 10
+    rev = rev * 10 + dig
+    n = n//10
+print(n)
+print(rev)
+# if
