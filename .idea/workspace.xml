@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="091b2841-b1c1-4c3e-b272-aa4ac4fe1ea0" name="Default Changelist" comment="" />
+    <list default="true" id="091b2841-b1c1-4c3e-b272-aa4ac4fe1ea0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,8 +31,8 @@
     <property name="last_opened_file_path" value="C:/Program Files/Python37" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.RE_Programs">
-    <configuration name="Learn_Pickle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Class_Program">
+    <configuration name="Class_Program" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -42,7 +44,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Learn_Pickle.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Class_Program.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -137,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Class_Program" />
         <item itemvalue="Python.RE_Programs" />
         <item itemvalue="Python.Learn_RE" />
         <item itemvalue="Python.Luxsoft_Prep" />
         <item itemvalue="Python.Programs_Practice" />
-        <item itemvalue="Python.Learn_Pickle" />
       </list>
     </recent_temporary>
   </component>
@@ -187,22 +189,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="480" y="240" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1577601892069" />
-    <state width="1345" height="174" key="GridCell.Tab.0.bottom" timestamp="1585314067516">
+    <state width="1345" height="174" key="GridCell.Tab.0.bottom" timestamp="1585341890380">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585314067516" />
-    <state width="1345" height="174" key="GridCell.Tab.0.center" timestamp="1585314067516">
+    <state width="1345" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585341890380" />
+    <state width="1345" height="174" key="GridCell.Tab.0.center" timestamp="1585341890380">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585314067516" />
-    <state width="1345" height="174" key="GridCell.Tab.0.left" timestamp="1585314067515">
+    <state width="1345" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585341890380" />
+    <state width="1345" height="174" key="GridCell.Tab.0.left" timestamp="1585341890380">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585314067515" />
-    <state width="1345" height="174" key="GridCell.Tab.0.right" timestamp="1585314067516">
+    <state width="1345" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585341890380" />
+    <state width="1345" height="174" key="GridCell.Tab.0.right" timestamp="1585341890380">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585314067516" />
+    <state width="1345" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585341890380" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1577601930656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -211,9 +213,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="384" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585303538971" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585045786610">
+    <state x="379" y="0" width="607" height="728" key="find.popup" timestamp="1585321316655">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585045786610" />
+    <state x="379" y="0" width="607" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1585321316655" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585337894926">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585337894926" />
   </component>
 </project>
