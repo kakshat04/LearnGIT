@@ -152,7 +152,7 @@ else:
 z = re.split(r'as', strng, 6)
 print(z)
 
-z = re.subn(r'\d{1,3}\.\d{1,3}', '$$$$$$$', strng)
+z = re.sub(r'\d{1,3}\.\d{1,3}', '$$$$$$$', strng)
 print(z)
 
 
