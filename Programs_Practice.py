@@ -192,3 +192,59 @@ while n > 0:
 print(n)
 print(rev)
 # if
+
+
+"""
+35. Write a Python program to create a list by concatenating a given list which range goes from 1 to n. Go to the editor
+Sample list : ['p', 'q']
+n =5
+Sample Output : ['p1', 'q1', 'p2', 'q2', 'p3', 'q3', 'p4', 'q4', 'p5', 'q5']
+Click me to see the sample solution
+"""
+class ListModification:
+    def __init__(self, lst, num):
+        self.lst = lst
+        self.num = num
+
+    def lst_mod(self):
+        new_lst = []
+        for i in range(len(self.lst)):
+            for j in range(1, self.num + 1):
+                new_lst.append(self.lst[i] + str(j))
+        return new_lst
+
+obj1 = ListModification(['p', 'q'], 5)
+print(obj1.lst_mod())
+
+"""
+49. Write a Python program to convert list to list of dictionaries. Go to the editor
+Sample lists: ["Black", "Red", "Maroon", "Yellow"], ["#000000", "#FF0000", "#800000", "#FFFF00"]
+Expected Output: [{'color_name': 'Black', 'color_code': '#000000'}, {'color_name': 'Red', 'color_code': '#FF0000'},
+ {'color_name': 'Maroon', 'color_code': '#800000'}, {'color_name': 'Yellow', 'color_code': '#FFFF00'}]
+"""
+
+color_name_lst = ["Black", "Red", "Maroon", "Yellow"]
+color_code_lst = ["#000000", "#FF0000", "#800000", "#FFFF00"]
+dict1 = {}
+l1 = []
+z = [{'col': a, 'code': b} for a, b in zip(color_name_lst, color_code_lst)]
+print(z)
+
+
+"""
+50. Write a Python program to sort a list of nested dictionaries. Go to the editor
+Click me to see the sample solution
+my_list = [{'key': {'subkey': 1}}, {'key': {'subkey': 10}}, {'key': {'subkey': 5}}]
+"""
+my_list = [{'key': {'subkey': 1}}, {'key': {'subkey': 10}}, {'key': {'subkey': 5}}]
+z = sorted(my_list, key=lambda e: e['key']['subkey'], reverse=True)
+
+my_dict = {'a': 2, 'd': 5, 'g': 3, 'y': 4}
+k = sorted(my_dict.items(), key=lambda x : x[1])
+
+my_dict1 = {'key': {'subkey': 1}}, {'key': {'subkey': 10}}, {'key': {'subkey': 5}}
+m = sorted(my_dict1, key=lambda x : x['key']['subkey'])
+
+print(m)
+print(k)
+print(z)
