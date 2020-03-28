@@ -1,11 +1,1 @@
-{
-    "president": {
-        "name": "Ram",
-        "age": 60
-    },
-    "prime-minister": {
-        "name": "Modi",
-        "age": 65,
-        "salary": 100000
-    }
-}
+{"people": [{"name": "Scott", "website": "stackabuse.com", "from": "Nebraska"}, {"name": "Larry", "website": "google.com", "from": "Michigan"}, {"name": "Tim", "website": "apple.com", "from": "Alabama"}]}

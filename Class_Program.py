@@ -181,8 +181,8 @@ compute the area of a rectangle
 """
 class Shape:
     def __init__(self, length, breadth):
-        self.__lenth = length
-        self.__breadth = breadth
+        self.lenth = length
+        self.breadth = breadth
 
 
 class Rectangle(Shape):
@@ -190,7 +190,7 @@ class Rectangle(Shape):
         super().__init__(length, breadth)
 
     def area(self):
-        return self._Shape__lenth * self._Shape__breadth
+        return self.lenth * self.breadth
 
 
 class Object(Shape):
@@ -199,7 +199,7 @@ class Object(Shape):
         self.__height = height
 
     def area(self):
-        return self._Shape__lenth * self._Shape__breadth*self.__height
+        return self.lenth * self.breadth*self.__height
 
 
 obj = Object(5, 10, 20)
