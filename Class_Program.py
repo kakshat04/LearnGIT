@@ -157,8 +157,7 @@ print(obj1.rev_str())
 
 """
 9. Write a Python class which has two methods get_String and print_String. get_String accept a string from the user and
- print_String print the string in upper case. - Go to the editor
-Click me to see the solution
+ print_String print the string in upper case.
 """
 class CheckString:
     def __init__(self):
@@ -177,57 +176,60 @@ class CheckString:
 
 
 """
-35. Write a Python program to create a list by concatenating a given list which range goes from 1 to n. Go to the editor
-Sample list : ['p', 'q']
-n =5
-Sample Output : ['p1', 'q1', 'p2', 'q2', 'p3', 'q3', 'p4', 'q4', 'p5', 'q5']
-Click me to see the sample solution
+10. Write a Python class named Rectangle constructed by a length and width and a method which will 
+compute the area of a rectangle
 """
-class ListModification:
-    def __init__(self, lst, num):
-        self.lst = lst
-        self.num = num
+class Shape:
+    def __init__(self, length, breadth):
+        self.__lenth = length
+        self.__breadth = breadth
 
-    def lst_mod(self):
-        new_lst = []
-        for i in range(len(self.lst)):
-            for j in range(1, self.num + 1):
-                new_lst.append(self.lst[i] + str(j))
-        return new_lst
 
-obj1 = ListModification(['p', 'q'], 5)
-print(obj1.lst_mod())
+class Rectangle(Shape):
+    def __init__(self, length, breadth):
+        super().__init__(length, breadth)
 
-"""
-49. Write a Python program to convert list to list of dictionaries. Go to the editor
-Sample lists: ["Black", "Red", "Maroon", "Yellow"], ["#000000", "#FF0000", "#800000", "#FFFF00"]
-Expected Output: [{'color_name': 'Black', 'color_code': '#000000'}, {'color_name': 'Red', 'color_code': '#FF0000'},
- {'color_name': 'Maroon', 'color_code': '#800000'}, {'color_name': 'Yellow', 'color_code': '#FFFF00'}]
-"""
+    def area(self):
+        return self._Shape__lenth * self._Shape__breadth
 
-color_name_lst = ["Black", "Red", "Maroon", "Yellow"]
-color_code_lst = ["#000000", "#FF0000", "#800000", "#FFFF00"]
-dict1 = {}
-l1 = []
-z = [{'col': a, 'code': b} for a, b in zip(color_name_lst, color_code_lst)]
-print(z)
+
+class Object(Shape):
+    def __init__(self, length, breadth, height):
+        super().__init__(length, breadth)
+        self.__height = height
+
+    def area(self):
+        return self._Shape__lenth * self._Shape__breadth*self.__height
+
+
+obj = Object(5, 10, 20)
+print(obj.area())
 
 
 """
-50. Write a Python program to sort a list of nested dictionaries. Go to the editor
-Click me to see the sample solution
-my_list = [{'key': {'subkey': 1}}, {'key': {'subkey': 10}}, {'key': {'subkey': 5}}]
+11. Write a Python class named Circle constructed by a radius and two methods which will
+compute the area and the perimeter of a circle.
 """
-my_list = [{'key': {'subkey': 1}}, {'key': {'subkey': 10}}, {'key': {'subkey': 5}}]
-z = sorted(my_list, key=lambda e: e['key']['subkey'], reverse=True)
+class Cirle:
+    def __init__(self, radius):
+        self.__radius = radius
 
-my_dict = {'a': 2, 'd': 5, 'g': 3, 'y': 4}
-k = sorted(my_dict.items(), key=lambda x : x[1])
+    def area(self):
+        return 3.14 * self.__radius**2
 
-my_dict1 = {'key': {'subkey': 1}}, {'key': {'subkey': 10}}, {'key': {'subkey': 5}}
-m = sorted(my_dict1, key=lambda x : x['key']['subkey'])
+    def perimeter(self):
+        return 2 * 3.14 * self.__radius
 
-print(m)
-print(k)
-print(z)
 
+obj_circle = Cirle(5)
+print("%.2f " %(obj_circle.area()))
+print("%.2f " %(obj_circle.perimeter()))
+# print()
+# print("%.2f "%per)
+
+"""
+12. Write a Python program to get the class name of an instance in Python. 
+"""
+print(obj_circle.__class__.__name__)
+print(issubclass(Rectangle, Shape))
+print(isinstance(obj_circle, Cirle))
