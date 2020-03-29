@@ -362,3 +362,8 @@ print(re.sub("Road", "rd", "My Road number is Road11"))
 
 # ## Write a Python program to replace all occurrences of space, comma, or dot with a colon
 print(re.subn("\s|,|\.", ';', "hjadh haj,kdhaj244. ,123hajdh5234"))
+
+
+# ## Write a regular expression that will accept an email id. Use the re module.
+pattern = r'[A-Za-z0-9.]+@\w+\.com'
+print(re.search(pattern, "My email id is dsd51.dsd5@gmail.com").group())
