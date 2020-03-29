@@ -44,3 +44,126 @@ def int_to_Roman(num):
     return roman_num
 
 int_to_Roman(1)
+
+
+# Learning DICT
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+print(thisdict['model'])
+print(thisdict.get('model'))
+thisdict['model'] = 'Figo'
+print(thisdict)
+
+for x in thisdict:
+    print(thisdict[x])
+
+if "brand" in thisdict:
+    print("Yes")
+
+# print(len(thisdict))
+# thisdict.pop("model")
+# print(thisdict)
+
+
+thisdict.popitem()
+print(thisdict)
+del thisdict['model']
+print(thisdict)
+
+# thisdict.clear()
+# print(thisdict)
+
+thisdict1 = thisdict.copy()
+print(thisdict1)
+
+z = dict(thisdict1)
+print(z)
+
+
+class A:
+    def __init__(self, a):
+        self.a = a
+
+    # def __str__(self):
+    #     return "Inside A"
+
+    def method(self):
+        return "Inside Instance method"
+
+    @classmethod
+    def cls_method(cls):
+        return "Inside class Method"
+
+    @staticmethod
+    def static_method():
+        return "Inside Static method"
+
+obj1 = A(10)
+print(A.cls_method())
+
+
+def upper(func):
+    def wrapper():
+        return func().upper()
+    return wrapper
+
+@upper
+def abc():
+    return "a"
+
+def def_():
+    return "b"
+
+
+print(abc())
+print(def_())
+
+# Generator function
+l1 = [1,2,3,4]
+# l2 = [1,4,9,16]
+def abc(l1):
+    l2 = list(map(lambda x: x**2, l1))
+    for i in l2:
+        yield i
+
+obj = abc(l1)
+for i in obj:
+    print(i)
+# print(next(obj))
+# print(next(obj))
+# print(next(obj))
+
+x = (x**2 for x in l1)
+print(next(x))
+print(next(x))
+print(next(x))
+
+l3 = iter(l1)
+print(next(l3))
+
+class A:
+    def __init__(self, max):
+        self.max = max
+
+    def __iter__(self):
+        self.num = 0
+        return self
+
+    def __next__(self):
+        if self.num >= self.max:
+            raise StopIteration
+        self.num += 1
+        return self.num
+
+p = A(3)
+z = iter(p)
+
+print(next(z))
+
+
+
+
