@@ -233,3 +233,30 @@ print("%.2f " %(obj_circle.perimeter()))
 print(obj_circle.__class__.__name__)
 print(issubclass(Rectangle, Shape))
 print(isinstance(obj_circle, Cirle))
+
+
+# class method and static method
+class Employee:
+
+    raise_amt = 1.20
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def emp_details(self):
+        return "{}, {} and {}".format(self.name, self.age, self.raise_amt)
+
+    @classmethod
+    def new_raise(cls, new_raise_amt):
+        cls.raise_amt = new_raise_amt
+fu
+
+emp1 = Employee("Akshat", "31")
+emp2 = Employee("Kumar", "30")
+print(emp1.emp_details())
+print(emp2.emp_details())
+
+Employee.new_raise(1.50)
+print(emp1.emp_details())
+print(emp2.emp_details())
