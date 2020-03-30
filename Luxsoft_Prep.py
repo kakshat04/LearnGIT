@@ -313,7 +313,7 @@ d2 = copy.deepcopy(d1)
 del d2['a']
 print(d2)
 print(d1)
-#
+
 # # ## 13. Write a Python program to map two lists into a dictionary. Go to the editor
 a = [11, 2, 3]
 b = ['a', 'b', 'c']
@@ -331,38 +331,38 @@ print(max(d1.values()))
 # ## 16. Write a Python program to get a dictionary from an object's fields. Go to the editor
 
 # # ## 17. Write a Python program to remove duplicates from Dictionary. Go to the editor
-# student_data = {
-#     'id1':
-#         {
-#             'name': ['Sara'],
-#             'class': ['V'],
-#             'subject_integration': ['english, math, science']
-#         },
-#     'id2':
-#         {
-#             'name': ['David'],
-#             'class': ['V'],
-#             'subject_integration': ['english, math, science']
-#         },
-#     'id3':
-#         {
-#             'name': ['Sara'],
-#             'class': ['V'],
-#             'subject_integration': ['english, math, science']
-#         },
-#     'id4':
-#         {
-#             'name': ['Surya'],
-#             'class': ['V'],
-#             'subject_integration': ['english, math, science']
-#         },
-# }
-#
-# new_student_list = {}
-# for i, j in student_data.items():
-#     if j not in new_student_list.values():
-#         new_student_list[i] = j
-# print(new_student_list)
+student_data = {
+    'id1':
+        {
+            'name': ['Sara'],
+            'class': ['V'],
+            'subject_integration': ['english, math, science']
+        },
+    'id2':
+        {
+            'name': ['David'],
+            'class': ['V'],
+            'subject_integration': ['english, math, science']
+        },
+    'id3':
+        {
+            'name': ['Sara'],
+            'class': ['V'],
+            'subject_integration': ['english, math, science']
+        },
+    'id4':
+        {
+            'name': ['Surya'],
+            'class': ['V'],
+            'subject_integration': ['english, math, science']
+        },
+}
+
+new_student_list = {}
+for i, j in student_data.items():
+    if j not in new_student_list.values():
+        new_student_list[i] = j
+print(new_student_list)
 #
 # # ## 18. Write a Python program to check a dictionary is empty or not. Go to the editor
 test_dict = {}
@@ -414,42 +414,23 @@ sample_dict = {'1':['a','b'], '2':['c','d']}
 # ad
 # bc
 # bd
-# keys = sample_dict.keys()
-# i = 0
-# for i in range(len(sample_dict)):
-#     for val1 in sample_dict[keys[i]]:
-#         for val2 in sample_dict[keys[i+1]]:
-#             print()
-
-
+for i in range(1, len(sample_dict)):
+    for k in sample_dict[str(i)]:
+        for l in sample_dict[str(i+1)]:
+            print(k,l)
 
 # 22. Write a Python program to find the highest 3 values in a dictionary. Go to the editor
 d2 = {'a': 300, 'b': 200, 'd':400}
 print(max(d2.values()))
 
 # 23. Write a Python program to combine values in python list of dictionaries. Go to the editor
-Sample_data = [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
-# Expected Output: Counter({'item1': 1150, 'item2': 300})
-# d0 = Sample_data[0]
-# keys = list(d0.keys())
-# values = list(d0.values())
-#
-# output_dict = d0
-#
-# for i in range(1, len(Sample_data)):
-#     print(Sample_data[i])
-#     print(Sample_data[i][keys[0]])
-#     if Sample_data[i][keys[0]] not in output_dict.values():
-#         print("Yes")
-#         # output_dict.update(Sample_data[i])
-# # print(output_dict)
-
-
-from collections import Counter
 item_list = [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
+# Expected Output: Counter({'item1': 1150, 'item2': 300})
+from collections import Counter
 result = Counter()
 for d in item_list:
     result[d['item']] += d['amount']
+    print(result[d['item']])
 print(result)
 
 
@@ -465,27 +446,121 @@ for i in strng:
 print(d1)
 # print([{i: strng.count(i)} for i in strng])
 
-# 25. Write a Python program to print a dictionary in table format.
+# 26. Write a Python program to count the values associated with key in a dictionary. Go to the editor
+sample_data = [{'id': 1, 'success': True, 'name': 'Lary'}, {'id': 2, 'success': True, 'name': 'Rabi'},
+               {'id': 3, 'success': True, 'name': 'Alex'}]
+# Expected result: Count of how many dictionaries have success as True
+
+key = "success"
+value = True
+count = 0
+for i in sample_data:
+    if i[key] == value:
+        count += 1
+print(count)
 
 
+# 27. Write a Python program to convert a list into a nested dictionary of keys. Go to the editor
+
+# 28. Write a Python program to sort a list alphabetically in a dictionary. Go to the editor
+
+# 29. Write a Python program to remove spaces from dictionary keys. Go to the editor
+d1 = {"Kumar Akshat": 'KA', "Paru Upreti": "PU"}
+d2 = {}
+for i,j in d1.items():
+    i1 = i.replace(" ", "")
+    d2[i1] = j
+print(d2)
+
+# 30. Write a Python program to get the top three items in a shop. Go to the editor
+# Sample data: {'item1': 45.50, 'item2':35, 'item3': 41.30, 'item4':55, 'item5': 24}
+# Expected Output:
+# item4 55
+# item1 45.5
+# item3 41.3
+
+item_dict = {'item1': 45.50, 'item2':35, 'item3': 41.30, 'item4':55, 'item5': 24}
+new_item_dict = dict(sorted(item_dict.items(), key=lambda x:x[1]))
+print(new_item_dict)
+z = iter(new_item_dict.items())
+print(z)
+for i in range(3):
+    print(next(z))
+
+# sort in ascending and descending order
+a = [1,2,4123,14,13,51,231,5123,13,123,12312]
+for i in range(len(a)):
+    for j in range(len(a) - 1):
+        if a[j] < a[j+1]:  # a[j]<a[j+1] -- ascending, a[j] > a[j+1] -- descending
+            a[j], a[j+1] = a[j+1], a[j]
+
+print(a)
 
 
-a = 0
-b = 1
-i=0
-while i<10:
-    print(a, end='')
-    a,b = b, a+b
-    i+=1
+# Inheritance -- Multilevel and Multiple Inheritance
+class Automobile:  # Parent Class
+    def __init__(self, doors, tyre):
+        self.doors = doors
+        self.tyre = tyre
 
-a = 0
-b = 1
-i=0
-while i<10:
-    print(a, end='')
-    c = a+b
-    a = b
-    b = c
-    i+=1
+    def __str__(self):
+        return "Inside Automobile Class"
+
+    def total_doors(self):
+        print("Inside Automotive Class -- Doors")
+        return self.doors
+
+    def total_tyres(self):
+        print("Inside Automotive class -- Tyres")
+        return self.tyre
 
 
+class Car(Automobile):
+    def __init__(self, doors, tyre, infotainment):
+        super().__init__(doors, tyre)
+        self.__infotainment = infotainment  # This is abstraction, using private class
+
+    def car_class(self):
+        if self.doors == 4:
+            return "Sedan"
+        elif self.doors == 2:
+            return "Convertible"
+
+    def infotainment_status(self):
+        print("Inside Car Class -- Infotainment")
+        return self.__infotainment, self.total_tyres()
+
+    def total_doors(self):  # This is method over-riding
+        print("Inside Car class -- Doors")
+        return self.doors
+
+
+class Scooter(Car, Automobile):  # This is called Multiple Inheritance
+    def __init__(self, doors, tyres, infotainment, stand):
+        super().__init__(doors, tyres, infotainment)
+        self.stand = stand
+
+    def __str__(self):
+        return "This is Multiple Inheritance class"
+
+    def full_feature(self):
+        return self.stand, self.infotainment_status(), self.total_doors(), self.total_tyres()
+
+
+obj1 = Car(4, 4, "Harman")
+print(obj1.total_doors())
+print(obj1.total_tyres())
+print(obj1.car_class())
+print(obj1.infotainment_status())
+
+obj2 = Scooter(4, 4, "Harman", 1)
+print(obj2.full_feature())
+
+
+# Encapsulation
+def test1(text):
+    def test2(t1):
+        return t1.upper() + text.upper()
+    return test2
+
+print(test1("Akshat")("Kumar"))

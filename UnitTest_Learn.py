@@ -42,15 +42,3 @@ class TestCal(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-# import unittest
-# import Calculate_Test
-# from math import pi
-#
-# class TestCircleArea(unittest.TestCase):
-#     def test_area(self):
-#         self.assertAlmostEqual(Calculate_Test.circle(1), pi)
-#         self.assertAlmostEqual(Calculate_Test.circle(2), pi * 2**2)
-#
-# if __name__ == '__main__':
-#     unittest.main()
