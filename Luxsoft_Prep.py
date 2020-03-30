@@ -467,3 +467,25 @@ print(d1)
 
 # 25. Write a Python program to print a dictionary in table format.
 
+
+
+
+a = 0
+b = 1
+i=0
+while i<10:
+    print(a, end='')
+    a,b = b, a+b
+    i+=1
+
+a = 0
+b = 1
+i=0
+while i<10:
+    print(a, end='')
+    c = a+b
+    a = b
+    b = c
+    i+=1
+
+
