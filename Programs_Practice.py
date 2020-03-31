@@ -248,3 +248,22 @@ m = sorted(my_dict1, key=lambda x : x['key']['subkey'])
 print(m)
 print(k)
 print(z)
+
+
+"""
+2 arrays as input [3,5,7,9,12], [3, 7, 9, 12]
+Output --> 5 - Missing Element in list 1
+"""
+def find_missing(arr1, arr2):
+    missing = " "
+    for i in arr1:
+        if i not in arr2:
+            missing = str(i) + ", " + missing
+    return missing
+
+
+def find_missing_option2(arr1, arr2):
+    return list(set(arr1).difference(set(arr2)))
+
+print(find_missing([3,5,7,9,12], [3, 9, 12]))
+print(find_missing_option2([3,5,7,9,12], [3, 9, 12]))
