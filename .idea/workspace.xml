@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="091b2841-b1c1-4c3e-b272-aa4ac4fe1ea0" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="091b2841-b1c1-4c3e-b272-aa4ac4fe1ea0" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Luxsoft_Prep.py" beforeDir="false" afterPath="$PROJECT_DIR$/Luxsoft_Prep.py" afterDir="false" />
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 353ce5c8b1a7e82d1b5f0ceeed34bd0f1d5bcadc
+      <change beforePath="$PROJECT_DIR$/Programs_Practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/Programs_Practice.py" afterDir="false" />
+>>>>>>> master
+    </list>
+>>>>>>> LearnGit
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -270,3 +270,4 @@ print(find_missing_option2([3,5,7,9,12], [3, 9, 12]))
 
 
 ### Learning GIT PULL and GIT FETCH
+## Git pull worked, now checking GIT Fetch
