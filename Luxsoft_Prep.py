@@ -564,3 +564,14 @@ def test1(text):
     return test2
 
 print(test1("Akshat")("Kumar"))
+
+string = "akshat"
+output = ""
+for i in string:
+    output = i + output
+print(output)
+
+output = ""
+for i in range(len(string)-1, -1, -1):
+    output += string[i]
+print(output)
