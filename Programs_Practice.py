@@ -267,3 +267,6 @@ def find_missing_option2(arr1, arr2):
 
 print(find_missing([3,5,7,9,12], [3, 9, 12]))
 print(find_missing_option2([3,5,7,9,12], [3, 9, 12]))
+
+
+### Learning GIT PULL and GIT FETCH
